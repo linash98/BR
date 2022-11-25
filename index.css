@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: Verdana, sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 40px;
+    padding: 20px;
+    box-shadow: 1px 1px 9px -3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+}
+.links h2, .titele h1{
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 15px;
+}
+.links h2:hover{
+    background-color:  #ccc;
+}
+/*start second section*/
+h1,h2,h3{
+    font-weight: 500;
+}
+.img-header{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background: url('./img/architect.jpg');
+}
+.img-header h1{
+    font-size: 60px;
+    text-align: center;
+    width: 500;
+}
+.img-header h1 b{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    background-color: rgb(0, 0, 0,0.7);
+}
+.cards , .project ,.about-emp, form{
+    padding: 25px;
+    margin-top: 40px;
+
+}
+hr{
+    margin: 20px 0;
+    background-color: #ccc;
+    opacity: 0.4;
+}
+.first-card-set, .second-card-set{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+.second-card-set{
+    margin-top: 25px;
+}
+.first-card-set div:nth-child(1) ,.second-card-set div:nth-child(1){
+    background: url('./img/house2.jpg');
+    width: 48%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.first-card-set div:nth-child(2), .second-card-set div:nth-child(2){
+    background: url('./img/house3.jpg');
+    width: 48%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.first-card-set span b , .second-card-set span b{
+    background-color: black ;
+    color: white;
+    padding: 20PX;
+    position: absolute;
+}
+.first-card-set div:nth-child(1):hover{
+    cursor: pointer;
+    filter: brightness(0.9);
+    font-size: xx-large;;
+}
+.first-card-set div:nth-child(2):hover{
+    cursor: pointer;
+    filter: brightness(0.9);
+    font-size: xx-large;;
+}
+.second-card-set div:nth-child(1):hover{
+    cursor: pointer;
+    filter: brightness(0.9);
+    font-size: xx-large;;
+}
+.second-card-set div:nth-child(2):hover{
+    cursor: pointer;
+    filter: brightness(0.9);
+    font-size: xx-large;;
+}
+ .about-paragraph{
+    letter-spacing: 0.5;
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 20px;
+}
+.about-emp{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-emp .emp1{
+    width: 48%;
+    margin-bottom: 20px;
+}
+.about-emp .emp1 img{
+    width: 100%;
+}
+.about-emp .emp1 h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+}
+.about-emp .emp1 span{
+    margin:10px;
+    color: #ccc;
+    font-weight: boldss;
+}
+.about-emp .emp1 p{
+    margin:10px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.about-emp .emp1 button{
+    padding: 20px;
+    width: 100%;
+    font-size: 30px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    
+}
+.about-emp .emp1 button:hover{
+    background-color: #ccc;
+}
+form p{
+    font-size: 20px;
+}
+.input div{
+    width: 100%;
+    margin: 10px;
+}
+.input div input{
+    padding: 15px;
+    width: 100%;
+    font-size: 15px;
+}
+.input button{
+    background: black;
+    color: #ccc;
+    width: 200px;
+    padding: 20px;
+    font-size: 20px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: white;
+}
+footer h3{
+    text-align: center;
+    width: 100%;
+}
+footer h3 a{
+    text-decoration: none;
+    color: yellow;
+}
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: -35px;
+    background-color: #dbc711;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .up.show {
+    right: 10px;
+  }
+
+
+  @media (max-width:992px) {
+    .nav{
+        flex-wrap: wrap;
+        height: 100px;
+        padding-left: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+    .nav .titele{
+        width: 100%;
+    }
+    .nav .links h2{
+        padding: 13px;
+        letter-spacing: 3px;
+    }
+    .first-card-set, .second-card-set ,.about-emp{
+        flex-wrap: wrap;
+    }
+    .first-card-set div:nth-child(1), .first-card-set div:nth-child(2),
+    .second-card-set div:nth-child(1), .second-card-set div:nth-child(2),
+    .emp1
+    {
+        width: 100% !important;
+        margin: 5px;
+    }
+  }
+
+  /*768
+  992
+  1300*/
+  @media(max-width <= 992px) {
+    .nav {
+        width: 100%;    
+    }
+    .links{
+       margin-left: 30%;
+    }
+}
